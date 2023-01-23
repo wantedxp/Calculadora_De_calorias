@@ -109,3 +109,11 @@ header {
 .result-content ul li strong {
     color: #38c944;
 }
+
+/* responsive */ 
+
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+}
