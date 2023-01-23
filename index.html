@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getkcal</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/nutrition-icon.png" alt="getkcal" width="100" height="100" />
+            <h1>Calculadora de calorias</h1>
+        </header>
+
+        <div class="content">
+            <form id="form">
+                <div class="form-group">
+                    <label for="gender">Sexo:</label>
+                    <select id="gender" required>
+                        <option value="male">Masculino</option>
+                        <option value="female">Feminino</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="age">Idade:</label>
+                    <input type="number" id="age" required />
+                </div>
+                <div class="form-group">
+                    <label for="weight">Peso:</label>
+                    <input type="number" id="weight" required />
+                </div>
+                <div class="form-group">
+                    <label for="height">Altura:</label>
+                    <input type="number" id="height" required />
+                </div>
+                <div class="form-group">
+                    <label for="activity_level">Nível de atividade física:</label>
+                    <select id="activity_level" required>
+                        <option value="1.2">Sedentário</option>
+                        <option value="1.375">Pouca atividade</option>
+                        <option value="1.55">Atividade moderada</option>
+                        <option value="1.725">Atividade intensa</option>
+                        <option value="1.9">Atividade muito intensa</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Calcular!</button>
+                </div>
+            </form>
+            <div class="result-container"><div class="result-content" id="result">...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
