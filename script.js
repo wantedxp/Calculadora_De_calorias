@@ -14,7 +14,7 @@ function handleSubmit(event) {
     const tmb = Math.round(
 
 
-        gender === 'female' // Aqui também poderia ter sido usado uma condicional if e else para tomada de desição mas decidi usar o operador ternário para ficar mais simplificado.
+        gender === 'female' // Aqui também poderia ter sido usado uma condicional if e else para tomada de decisão mas utilizei operador ternário para ficar mais simplificado.
             ? (655 + (9.6 * weight) + (1.8 * height) - (4.7 * age))
             : (66 + (13.7 * weight) + (5 * height) - (6.8 * age))
     );
